@@ -7,5 +7,6 @@ export_paths:
   - resources/forms
   - resources/blueprints
   - public/mockup-assets
+  - public/assets
   - tailwind.config.js
   - resources/css/site.css
