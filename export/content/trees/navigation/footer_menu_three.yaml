@@ -1,0 +1,17 @@
+tree:
+  -
+    id: aa2fbc15-a26f-4036-a9c0-af2bbb267047
+    title: Terms
+    url: /terms
+  -
+    id: 017f63e8-c888-4cc2-b809-bdfd85589229
+    title: 'About Us'
+    url: /about
+  -
+    id: bb667308-a872-454b-96c7-75874e34bcdf
+    title: Team
+    url: /team
+  -
+    id: 9c3be81c-2c71-4f9c-98f3-40dbc8c3ea2a
+    title: Privacy
+    url: /privacy

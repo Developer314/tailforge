@@ -1,0 +1,11 @@
+updatable: true
+export_paths:
+  - content
+  - resources/blueprints
+  - resources/views
+  - resources/fieldsets
+  - resources/forms
+  - resources/blueprints
+  - public/mockup-assets
+  - tailwind.config.js
+  - resources/css/site.css

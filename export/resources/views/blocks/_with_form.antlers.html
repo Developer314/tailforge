@@ -1,0 +1,40 @@
+      <section class="py-20">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+              <div class="max-w-lg">
+                <h2 class="mb-6 lg:mb-12 text-4xl lg:text-5xl font-bold font-heading">{{title}}</h2>
+                {{contacts}}
+                <h3 class="mb-1 text-2xl text-gray-800">{{title}}</h3>
+                <p class="mb-6 text-lg text-gray-500 leading-loose">{{value}}</p>
+                {{/contacts}}
+                
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4">
+              {{ form:contact }}
+
+                {{ if success }} 
+               <p class="mb-6 text-lg text-green-500 leading-loose">{{ form_success_message }}</p>
+               {{else}}
+                {{ if errors }}
+                {{ errors }}
+                <p class="text-lg text-red-500 leading-loose">{{value}}</p>
+                {{ /errors }}
+                {{ /if }}
+                {{fields}}
+                {{if type=="textarea"}}
+                <textarea class="mb-4 w-full p-3 border rounded resize-none" placeholder="{{placeholder}}" name="{{handle}}" id="{{handle}}" cols="30" rows="10"></textarea>
+                {{/else}}
+                <input type="{{input_type}}" name="{{handle}}" class="w-full py-3 pl-3 mb-4 border rounded" id="{{handle}}" placeholder="{{placeholder}}">
+                {{/if}}
+                
+                {{/fields}}
+                
+                <button type="submit" class="w-full inline-block px-6 py-3 mr-4 text-sm text-white font-bold leading-loose bg-gray-500 hover:bg-gray-600 rounded transition duration-200">Submit</button>
+                {{/if}}
+               {{ /form:contact }}
+            </div>
+          </div>
+        </div>
+      </section>

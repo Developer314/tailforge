@@ -1,0 +1,53 @@
+title: Testimonial
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: 'Author Name'
+          -
+            handle: designation
+            field:
+              default: 'CEO & Founder'
+              type: text
+              display: Designation
+          -
+            handle: testimonial
+            field:
+              default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dignissim quam ultricies, placerat tellus sed, laoreet orci. Duis luctus quam ac metus gravida sodales. Sed a ex accumsan, pellentesque sem eget, scelerisque dolor.'
+              type: textarea
+              display: Testimonial
+          -
+            handle: author_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Author Image'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

@@ -1,0 +1,647 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: blocks
+    field:
+      remove_empty_nodes: true
+      type: bard
+      display: Blocks
+      sets:
+        'Block Types':
+          display: 'Block Types'
+          icon: align-object-top
+          sets:
+            home_hero:
+              display: 'Home Hero'
+              instructions: 'This Block is for Home Page'
+              fields:
+                -
+                  handle: background
+                  field:
+                    type: toggle
+                    display: Background
+                -
+                  handle: title_1
+                  field:
+                    default: 'Ensure you complete what you began today—before it’s forgotten tomorrow'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: description
+                  field:
+                    default: 'Precise annotations help users navigate new features confidently. Understanding the project is the first essential step in the development process'
+                    type: textarea
+                    display: Description
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: button_1_text
+                  field:
+                    default: 'Explore for Free'
+                    type: text
+                    display: 'Button 1 Text'
+                -
+                  handle: button_1_link
+                  field:
+                    type: text
+                    display: 'Button 1 Link'
+                -
+                  handle: button_1_target
+                  field:
+                    options:
+                      -
+                        key: _blank
+                        value: Blank
+                      -
+                        key: _self
+                        value: Self
+                    default: _self
+                    type: select
+                    display: 'Button 1 Target'
+                -
+                  handle: button_2_text
+                  field:
+                    default: 'Learn More'
+                    type: text
+                    display: 'Button 2 Text'
+                -
+                  handle: button_2_link
+                  field:
+                    type: text
+                    display: 'Button 2 Link'
+                -
+                  handle: button_2_target
+                  field:
+                    options:
+                      -
+                        key: _self
+                        value: Self
+                      -
+                        key: _blank
+                        value: Blank
+                    default: _self
+                    type: select
+                    display: 'Button 2 Target'
+            pricing_plans:
+              display: 'Pricing Plans'
+              fields:
+                -
+                  handle: title_1
+                  field:
+                    default: 'Pricing Plans'
+                    type: text
+                    display: 'Title 1'
+                -
+                  handle: title_2
+                  field:
+                    default: 'Lorem ipsum dolor sit amet consectutar domor at elis'
+                    type: text
+                    display: 'Title 2'
+                -
+                  handle: description
+                  field:
+                    default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.'
+                    type: textarea
+                    display: Description
+            newsletter_signup:
+              display: 'Newsletter Signup'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: Signup
+                    type: text
+                    display: Title
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    default: 'Describe your service here. Highlight key benefits and explain how it adds value.'
+                -
+                  handle: description
+                  field:
+                    default: 'Introduce your product or service with a compelling headline and supporting text.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: form_title
+                  field:
+                    default: 'Sign up to our newsletter'
+                    type: text
+                    display: 'Form Title'
+                -
+                  handle: form_description
+                  field:
+                    default: 'Describe your service here. Highlight key benefits and explain how it adds value'
+                    type: textarea
+                    display: 'Form Description'
+                -
+                  handle: submit_button_text
+                  field:
+                    default: 'Sign Me UP'
+                    type: text
+                    display: 'Submit Button Text'
+            partner_logos:
+              display: 'Partner Logos'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: logos
+                  field:
+                    container: assets
+                    type: assets
+                    display: Logos
+            mobile_app:
+              display: 'Mobile App'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'Get our Free Mobile App'
+                    type: text
+                    display: Title
+                -
+                  handle: description
+                  field:
+                    default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: android_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Android Image'
+                -
+                  handle: android_app_link
+                  field:
+                    type: text
+                    display: 'Android App Link'
+                -
+                  handle: iphone_app_link
+                  field:
+                    type: text
+                    display: 'iPhone App Link'
+                -
+                  handle: iphone_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'iPhone Image'
+                -
+                  handle: mobile_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Mobile Image'
+                -
+                  handle: features_1
+                  field:
+                    type: grid
+                    display: 'Features 1'
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          default: 'Lorem ipsum dolor'
+                          type: text
+                          display: Text
+                      -
+                        handle: description
+                        field:
+                          default: 'Pellentesque eu quam vitae mi lacinia consequat quis in metus.'
+                          type: textarea
+                          display: Description
+                -
+                  handle: features_2
+                  field:
+                    type: grid
+                    display: 'Features 2'
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          default: 'Lorem ipsum dolor'
+                          type: text
+                          display: Text
+                      -
+                        handle: description
+                        field:
+                          default: 'Pellentesque eu quam vitae mi lacinia consequat quis in metus.'
+                          type: textarea
+                          display: Description
+            testimonial:
+              display: Testimonial
+              fields:
+                -
+                  handle: title
+                  field:
+                    placeholder: 'Our Testimonials'
+                    type: text
+                    display: Title
+                -
+                  handle: heading
+                  field:
+                    placeholder: 'See What Our Clients says'
+                    type: text
+                    display: Heading
+                -
+                  handle: description
+                  field:
+                    default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: show_pagination
+                  field:
+                    type: toggle
+                    display: 'Show Pagination'
+                -
+                  handle: number_of_items_to_display
+                  field:
+                    input_type: number
+                    default: '6'
+                    type: text
+                    display: 'Number of Items to Display'
+            team_members:
+              display: 'Team Members'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'Our Team'
+                    type: text
+                    display: Title
+                -
+                  handle: heading
+                  field:
+                    default: 'The Team Who Delivers the best'
+                    type: text
+                    display: Heading
+                -
+                  handle: description
+                  field:
+                    default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: show_pagination
+                  field:
+                    type: toggle
+                    display: 'Show Pagination'
+                -
+                  handle: number_of_items_to_display
+                  field:
+                    input_type: number
+                    default: '6'
+                    type: text
+                    display: 'Number Of Items To Display'
+            faqs:
+              display: Faqs
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: FAQs
+                    type: text
+                    display: Title
+                -
+                  handle: heading
+                  field:
+                    default: 'Our FAQs'
+                    type: text
+                    display: Heading
+                -
+                  handle: show_pagination
+                  field:
+                    type: toggle
+                    display: 'Show Pagination'
+                -
+                  handle: number_of_items_to_display
+                  field:
+                    type: text
+                    display: 'Number of Items to display'
+        article_block:
+          display: 'Article Block'
+          sets:
+            article:
+              display: Article
+              fields:
+                -
+                  handle: article
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Article
+                    sets:
+                      article:
+                        display: Article
+                        sets:
+                          heading:
+                            display: Heading
+                            fields:
+                              -
+                                handle: heading
+                                field:
+                                  type: text
+                                  display: Heading
+                          paragraph:
+                            display: Paragraph
+                            fields:
+                              -
+                                handle: paragraph
+                                field:
+                                  type: textarea
+                                  display: Paragraph
+                          image:
+                            display: Image
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Image
+        highlight_blocks:
+          display: 'Highlight Blocks'
+          sets:
+            highlight_type_1:
+              display: 'Highlight Type 1'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'The newest release of this exceptional product is now ready to be deployed'
+                    type: text
+                    display: Title
+                -
+                  handle: description
+                  field:
+                    default: 'A compelling message that draws customers into your creative vision, fostering a stronger connection with your brand.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: button_text
+                  field:
+                    default: 'Try Demo'
+                    type: text
+                    display: 'Button Text'
+                -
+                  handle: button_link
+                  field:
+                    type: text
+                    display: 'Button Link'
+                -
+                  handle: button_target
+                  field:
+                    options:
+                      -
+                        key: _blank
+                        value: Blank
+                      -
+                        key: _self
+                        value: Self
+                    default: _blank
+                    type: select
+                    display: 'Button Target'
+                -
+                  handle: highlights
+                  field:
+                    type: grid
+                    display: Highlights
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: 'Comprehensive Team Strategy'
+                          type: text
+                          display: Title
+                      -
+                        handle: description
+                        field:
+                          default: 'Ensure equitable distribution of daily tasks among your employees.'
+                          type: textarea
+                          display: Description
+            highlight_type_2:
+              display: 'Highlight Type 2'
+              fields:
+                -
+                  handle: highlights
+                  field:
+                    type: grid
+                    display: Highlights
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: 'List of Returning Users'
+                          type: text
+                          display: Title
+                      -
+                        handle: description
+                        field:
+                          default: 'Enhancing your skills often begins with taking on engaging side projects beyond your regular responsibilities. Our free projects offer a great starting point. Personal and brand development are vital for any thriving business'
+                          type: textarea
+                          display: Description
+            highlight_type_3:
+              display: 'Highlight Type 3'
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: title
+                  field:
+                    default: Features
+                    type: text
+                    display: Title
+                -
+                  handle: highlights
+                  field:
+                    type: grid
+                    display: Highlights
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: 'Immediate Assistance Channel'
+                          type: text
+                          display: Title
+                      -
+                        handle: description
+                        field:
+                          default: 'Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus sit amet tempus vestibulum'
+                          type: textarea
+                          display: Description
+            highlight_type_4:
+              display: 'Highlight Type 4'
+              fields:
+                -
+                  handle: highlights
+                  field:
+                    type: grid
+                    display: Highlights
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: 'Consistent spacing and structure ensure a smooth, user-friendly experience'
+                          type: text
+                          display: Title
+                      -
+                        handle: description
+                        field:
+                          default: 'Responsive design and thoughtful layout ensure seamless user interaction. A well-structured interface lays the foundation for intuitive navigation.'
+                          type: textarea
+                          display: Description
+        contact:
+          display: Contact
+          sets:
+            with_map:
+              display: 'With Map'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'Describe your service here. Highlight key benefits and explain how it adds value'
+                    type: text
+                    display: Title
+                -
+                  handle: contacts
+                  field:
+                    type: grid
+                    display: Contacts
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: Address
+                          type: text
+                          display: Title
+                      -
+                        handle: value
+                        field:
+                          default: '742 Belmont Avenue San Francisco, CA 94110 United States'
+                          type: text
+                          display: Value
+                -
+                  handle: gmap_iframe
+                  field:
+                    type: textarea
+                    display: 'Gmap Iframe'
+            with_form:
+              display: 'With Form'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'Good annotations lead users. Project clarity leads developers.'
+                    type: text
+                    display: Title
+                -
+                  handle: contacts
+                  field:
+                    type: grid
+                    display: Contacts
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          default: Address
+                          type: text
+                          display: Title
+                      -
+                        handle: value
+                        field:
+                          default: '742 Belmont Avenue San Francisco, CA 94110 United States'
+                          type: text
+                          display: Value
+                -
+                  handle: form_success_message
+                  field:
+                    default: 'Thanks for contact us, One our Rep will contact you soon'
+                    type: text
+                    display: 'Form Success Message'
+        blog_listing:
+          display: 'Blog Listing'
+          sets:
+            blog_listing_type_1:
+              display: 'Blog Listing Type 1'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'Our Blog'
+                    type: text
+                    display: Title
+                -
+                  handle: heading
+                  field:
+                    default: 'Lorem ipsum dolor sit amet consectutar domor at elis'
+                    type: text
+                    display: Heading
+                -
+                  handle: description
+                  field:
+                    default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: show_pagination
+                  field:
+                    type: toggle
+                    display: 'Show Pagination'
+                -
+                  handle: number_of_items_to_display
+                  field:
+                    type: text
+                    display: 'Number of Items to Display'
+            blog_listing_type_2:
+              display: 'Blog Listing Type 2'
+              fields:
+                -
+                  handle: title
+                  field:
+                    default: 'Our Blog'
+                    type: text
+                    display: Title
+                -
+                  handle: heading
+                  field:
+                    default: 'Lorem ipsum dolor sit amet consectutar domor at elis'
+                    type: text
+                    display: Heading
+                -
+                  handle: description
+                  field:
+                    default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.'
+                    type: textarea
+                    display: Description
+                -
+                  handle: show_pagination
+                  field:
+                    type: toggle
+                    display: 'Show Pagination'
+                -
+                  handle: number_of_items_to_display
+                  field:
+                    type: text
+                    display: 'Number of Items to Display'

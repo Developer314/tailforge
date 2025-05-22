@@ -1,0 +1,60 @@
+title: 'Pricing Plan'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: monthly_price
+            field:
+              type: text
+              display: 'Monthly price'
+          -
+            handle: yearly_price
+            field:
+              type: text
+              display: 'Yearly Price'
+          -
+            handle: features
+            field:
+              type: grid
+              display: Features
+              fields:
+                -
+                  handle: feature
+                  field:
+                    type: text
+                    display: Feature
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

@@ -1,0 +1,19 @@
+
+
+
+
+<section class="py-20">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-2xl mx-auto">
+           {{article}}
+{{if type=="text"}}
+{{text}}
+{{else}}
+{{ partial src="blocks/{type}" }}
+{{/if}}
+{{/article}}
+
+            
+           </div>
+        </div>
+      </section>

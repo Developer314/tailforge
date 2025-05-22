@@ -1,0 +1,76 @@
+title: Blog
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: short_description
+            field:
+              type: textarea
+              display: 'Short Description'
+          -
+            import: page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              show_regenerate: true
+          -
+            handle: date_published
+            field:
+              input_type: date
+              type: text
+              display: 'Date Published'
+          -
+            handle: blog_category
+            field:
+              options:
+                -
+                  key: cat1
+                  value: 'Category 1'
+                -
+                  key: cat2
+                  value: 'Category 2'
+                -
+                  key: cat3
+                  value: 'Categpry 3'
+              default: cat1
+              type: select
+              display: 'Blog Category'

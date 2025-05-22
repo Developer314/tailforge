@@ -1,0 +1,37 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              placeholder: 'Your Name'
+              type: text
+              display: Name
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: 'Your Email'
+              type: text
+              display: Email
+              validate:
+                - required
+          -
+            handle: phone
+            field:
+              placeholder: 'Your Phone'
+              type: text
+              display: Phone
+              validate:
+                - required
+          -
+            handle: message
+            field:
+              placeholder: 'Your Message'
+              type: textarea
+              display: Message
+              validate:
+                - required

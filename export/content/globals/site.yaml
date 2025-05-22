@@ -1,0 +1,16 @@
+title: Site
+data:
+  logo_white: logo_white.svg
+  logo_black: logo_black.svg
+  footer_menu_one_title: Company
+  footer_menu_two_title: Pages
+  footer_menu_three_title: Legal
+  footer_menu_four_title: Resources
+  footer_subscribe_title_one: Subscribe
+  footer_subscribe_description: 'Signup to Get our Latest Updates and News'
+  footer_copyright: 'Tailforge, All right reserved @revolve314.com'
+  facebook: 'http://www.facebook.com'
+  twitter: 'http://www.facebook.com'
+  github: 'http://www.facebook.com'
+  instagram: 'http://www.facebook.com'
+  linkedin: 'http://www.facebook.com'

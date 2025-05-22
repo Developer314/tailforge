@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        {{ vite src="resources/js/site.js|resources/css/site.css" }}
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+    </head>
+    <body class="antialiased bg-body text-body font-body">
+    <div class="">
+
+      {{ template_content }}
+                
+           
+      
+   {{ partial src="blocks/footer" }}
+     
+    </div>
+</body>
+</html>

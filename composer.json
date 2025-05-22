@@ -1,0 +1,24 @@
+{
+    "name": "developer314/tailforge",
+    "extra": {
+        "statamic": {
+            "name": "Tailforge",
+            "description": "Tailforge is a modern, clean, and powerful Statamic Starter Kit built using Tailwind CSS v4 and Alpine.js. Whether you're launching a personal blog, a SaaS website, a business landing page, or an app showcase - Tailforge gives you a rock-solid foundation with flexible UI blocks."
+        },
+        "laravel": {
+            "providers": [
+                "Developer314\\Tailforge\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Developer314\\Tailforge\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}

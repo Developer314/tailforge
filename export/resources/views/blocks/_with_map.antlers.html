@@ -1,0 +1,20 @@
+<section class="pt-20">
+        <div class="container px-4 mx-auto mb-20">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+              <div class="max-w-lg">
+                <h2 class="text-4xl lg:text-5xl font-bold font-heading">{{title}}</h2>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4">
+              {{contacts}}
+                <h3 class="mb-1 text-2xl font-bold font-heading">{{title}}</h3>
+              <p class="mb-4 lg:mb-8 text-lg text-gray-500">{{value}}</p>
+              {{/contacts}}
+            </div>
+          </div>
+        </div>
+        <div>
+          {{gmap_iframe}}
+        </div>
+      </section>

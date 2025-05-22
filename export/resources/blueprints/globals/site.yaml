@@ -1,0 +1,96 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: logo_white
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Logo White'
+          -
+            handle: logo_black
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Logo Black'
+  footer:
+    display: Footer
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: footer_menu_one_title
+            field:
+              default: Company
+              type: text
+              display: 'Footer Menu One Title'
+          -
+            handle: footer_menu_two_title
+            field:
+              default: Pages
+              type: text
+              display: 'Footer Menu Two Title'
+          -
+            handle: footer_menu_three_title
+            field:
+              default: Legal
+              type: text
+              display: 'Footer Menu Three Title'
+          -
+            handle: footer_menu_four_title
+            field:
+              default: Resources
+              type: text
+              display: 'Footer Menu Four Title'
+          -
+            handle: footer_subscribe_title_one
+            field:
+              default: Subscribe
+              type: text
+              display: 'Footer Subscribe Title one'
+          -
+            handle: footer_subscribe_description
+            field:
+              default: 'Signup to Get our Latest Updates and News'
+              type: text
+              display: 'Footer Subscribe Description'
+          -
+            handle: footer_copyright
+            field:
+              default: 'Tailforge, All right reserved @revolve314.com'
+              type: text
+              display: 'Footer Copyright'
+      -
+        display: 'Social Icons'
+        fields:
+          -
+            handle: facebook
+            field:
+              type: text
+              display: Facebook
+          -
+            handle: twitter
+            field:
+              type: text
+              display: Twitter
+          -
+            handle: github
+            field:
+              type: text
+              display: Github
+          -
+            handle: instagram
+            field:
+              type: text
+              display: Instagram
+          -
+            handle: linkedin
+            field:
+              type: text
+              display: Linkedin
